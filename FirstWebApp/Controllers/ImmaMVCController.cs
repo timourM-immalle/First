@@ -15,5 +15,15 @@ namespace FirstWebApp.Controllers
         {
             return View();
         }
+
+        public string Route() //static???
+        {
+            return "dkld";
+        }
+
+        public string Route(string naam, int leeftijd)
+        {
+            return $"hallo {naam} die {leeftijd} jaar oud is";
+        }
     }
 }
