@@ -26,6 +26,7 @@ namespace FirstWebApp.Controllers
         public IActionResult Route(string naam = "iemand", int leeftijd = 00)
         {
             ViewData["betereRoute"] = $"hallo {naam} die {leeftijd} jaar oud is";
+            ViewData["naam"] = naam;
             return View();
         }
     }
