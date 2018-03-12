@@ -16,15 +16,17 @@ namespace FirstWebApp.Controllers
             return View();
         }
 
-        public string Route() //static???
+        public IActionResult Route() //static???
         {
-            return "dkld";
+            ViewData["slechteRoute"] = "dkd";
+            return View(); //ViewData: dictionnary om data door te geven aan ...; ViewBag?
             
         }
 
-        public string Route(string naam = "iemand", int leeftijd = 00)
+        public IActionResult Route(string naam = "iemand", int leeftijd = 00)
         {
-            return $"hallo {naam} die {leeftijd} jaar oud is";
+            ViewData["betereRoute"] = $"hallo {naam} die {leeftijd} jaar oud is";
+            return View();
         }
     }
 }
