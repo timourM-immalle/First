@@ -21,7 +21,7 @@ namespace FirstWebApp.Controllers
             return "dkld";
         }
 
-        public string Route(string naam, int leeftijd)
+        public string Route(string naam = "iemand", int leeftijd = 00)
         {
             return $"hallo {naam} die {leeftijd} jaar oud is";
         }
